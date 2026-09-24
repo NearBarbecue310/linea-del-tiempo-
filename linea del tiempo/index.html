@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea del Tiempo Interactiva: La Carrera Atómica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+  <h1>La Carrera Atómica (1938 - 1991)</h1>
+  <p>Explora la cronología interactiva de la era nuclear y la Guerra Fría</p>
+
+  <!-- Reproductor de audio -->
+  <div class="audio-control">
+    <button id="musicBtn" class="filter-btn">🎵 Reproducir música ambiental</button>
+    <audio id="bgMusic" loop src="musica.mp3"></audio>
+  </div>
+</header>
+
+  <!-- Panel de Control e Interacción -->
+  <section class="controls-container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar evento, personaje o año (ej. Oppenheimer, 1962)...">
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="usa">🇺🇸 EE. UU.</button>
+      <button class="filter-btn" data-filter="urss">🛠️ URSS</button>
+      <button class="filter-btn" data-filter="otros">🌍 Otros Países</button>
+      <button class="filter-btn" data-filter="tratados">📜 Tratados y Diplomacia</button>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal de la Línea de Tiempo -->
+  <main class="timeline-wrapper">
+    <div class="timeline" id="timelineContainer">
+      <!-- Generado dinámicamente con JavaScript -->
+    </div>
+  </main>
+
+  <!-- Ventana Modal de Detalle al hacer clic en un evento -->
+  <div class="modal" id="eventModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
