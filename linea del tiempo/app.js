@@ -95,6 +95,7 @@ const atomicEvents = [
     title: "Crisis de los Misiles en Cuba",
     category: "urss",
     shortDesc: "El punto más cercano a una Tercera Guerra Mundial Nuclear.",
+    image: "img/misiles.jpg",
     fullDesc: "El descubrimiento de misiles nucleares soviéticos en Cuba llevó a EE. UU. a decretar un bloqueo naval. Tras 13 días de máxima tensión, se acordó la retirada de los misiles.",
     figures: ["John F. Kennedy", "Nikita Jrushchov", "Fidel Castro"]
   },
@@ -105,6 +106,7 @@ const atomicEvents = [
     title: "Tratado de No Proliferación Nuclear (NPT)",
     category: "tratados",
     shortDesc: "Acuerdo para evitar la expansión global de las armas nucleares.",
+    image: "img/tratado.jpg",
     fullDesc: "Tratado internacional clave destinado a restringir la posesión de armas nucleares a los países que ya las poseían y promover el uso pacífico de la energía atómica.",
     figures: ["Naciones Unidas"]
   }
